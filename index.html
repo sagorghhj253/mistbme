@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Biomedical Engineering</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-dept">BME</span>
+                <span class="logo-text">Biomedical Engineering</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#routine" class="nav-link" data-page="routine">CT-Mid Routine</a></li>
+                <li><a href="#class-routine" class="nav-link" data-page="class-routine">Class Routine</a></li>
+                <li><a href="#software" class="nav-link" data-page="software">Software</a></li>
+                <li><a href="#gallery" class="nav-link" data-page="gallery">Gallery</a></li>
+                <li><a href="#contact" class="nav-link" data-page="contact">Contact CRs</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="main-container">
+        
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="hero">
+                <div class="hero-background"></div>
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="title-line">Department of</span>
+                        <span class="title-line main">Biomedical Engineering</span>
+                    </h1>
+                    <p class="hero-subtitle">Level-4, Term-II | Session: 2024-25</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">6</span>
+                            <span class="stat-label">Courses</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Class Tests</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Resources</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <div class="welcome-grid">
+                    <div class="welcome-card">
+                        <div class="card-icon">📚</div>
+                        <h3>Academic Excellence</h3>
+                        <p>Access comprehensive routines, schedules, and academic resources for Level-4, Term-II students.</p>
+                    </div>
+                    <div class="welcome-card">
+                        <div class="card-icon">💻</div>
+                        <h3>Software Hub</h3>
+                        <p>Download essential engineering software including Python, SolidWorks, ANSYS, and Linux distributions.</p>
+                    </div>
+                    <div class="welcome-card">
+                        <div class="card-icon">🎓</div>
+                        <h3>Student Support</h3>
+                        <p>Connect with Class Representatives for assistance, guidance, and academic collaboration.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CT-Mid Routine Page -->
+        <section id="routine" class="page">
+            <div class="page-header">
+                <h2 class="page-title">CT-Mid Routine</h2>
+                <p class="page-subtitle">Level-4 Examination Schedule</p>
+            </div>
+            
+            <div class="content-section">
+                <div class="routine-controls">
+                    <button class="view-btn active" data-view="all">All Courses</button>
+                    <button class="view-btn" data-view="subject">Subject-wise</button>
+                </div>
+
+                <!-- All Courses View -->
+                <div id="all-routine" class="routine-view active">
+                    <div class="table-container">
+                        <table class="routine-table">
+                            <thead>
+                                <tr>
+                                    <th>Course</th>
+                                    <th>CT-1</th>
+                                    <th>MID</th>
+                                    <th>CT-2</th>
+                                    <th>CT-3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="course-code">BME 409</td>
+                                    <td>08-12-2025</td>
+                                    <td>29-12-2025</td>
+                                    <td>26-01-2026</td>
+                                    <td>16-02-2026</td>
+                                </tr>
+                                <tr>
+                                    <td class="course-code">BME 407</td>
+                                    <td>10-12-2025</td>
+                                    <td>31-12-2025</td>
+                                    <td>28-01-2026</td>
+                                    <td>18-02-2026</td>
+                                </tr>
+                                <tr>
+                                    <td class="course-code">GEEM 451</td>
+                                    <td>15-12-2025</td>
+                                    <td>05-01-2026</td>
+                                    <td>02-02-2026</td>
+                                    <td>23-02-2026</td>
+                                </tr>
+                                <tr>
+                                    <td class="course-code">BME 441</td>
+                                    <td>17-12-2025</td>
+                                    <td>07-01-2026</td>
+                                    <td>04-02-2026</td>
+                                    <td>25-02-2026</td>
+                                </tr>
+                                <tr>
+                                    <td class="course-code">BME 421</td>
+                                    <td>22-12-2025</td>
+                                    <td>19-01-2026</td>
+                                    <td>09-02-2026</td>
+                                    <td>02-03-2026</td>
+                                </tr>
+                                <tr>
+                                    <td class="course-code">GESL 421</td>
+                                    <td>24-12-2025</td>
+                                    <td>21-01-2026</td>
+                                    <td>11-02-2026</td>
+                                    <td>04-03-2026</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Subject-wise View -->
+                <div id="subject-routine" class="routine-view">
+                    <div class="subject-selector">
+                        <select id="course-select" class="course-dropdown">
+                            <option value="">Select a Course</option>
+                            <option value="BME409">BME 409</option>
+                            <option value="BME407">BME 407</option>
+                            <option value="GEEM451">GEEM 451</option>
+                            <option value="BME441">BME 441</option>
+                            <option value="BME421">BME 421</option>
+                            <option value="GESL421">GESL 421</option>
+                        </select>
+                    </div>
+
+                    <div id="course-details" class="course-details">
+                        <p class="select-prompt">Please select a course to view its examination schedule</p>
+                    </div>
+                </div>
+
+                <!-- Course Materials Section -->
+                <div class="materials-section">
+                    <div class="materials-header">
+                        <h3>📚 Course Materials & Resources</h3>
+                        <p>Access all class materials, notes, and study resources</p>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1BwB6LH9x4-Ymq3TPD23Juo9u8T9jkInd" target="_blank" class="materials-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                            <polyline points="13 2 13 9 20 9"></polyline>
+                        </svg>
+                        <span>Download All Course Materials</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 3L8.6 4.4L14.2 10H3V12H14.2L8.6 17.6L10 19L18 11L10 3Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Class Routine Page -->
+        <section id="class-routine" class="page">
+            <div class="page-header">
+                <h2 class="page-title">Class Routine</h2>
+                <p class="page-subtitle">Department of Biomedical Engineering - Level-4, Term-II</p>
+            </div>
+            
+            <div class="content-section">
+                <div class="schedule-info">
+                    <div class="info-badge">
+                        <span class="badge-label">Session:</span>
+                        <span class="badge-value">2024-25</span>
+                    </div>
+                </div>
+
+                <div class="table-container class-routine-container">
+                    <table class="class-routine-table">
+                        <thead>
+                            <tr>
+                                <th>Pd./Hrs<br>Days</th>
+                                <th>1<br>0800-0850</th>
+                                <th>2<br>0900-0950</th>
+                                <th>3<br>1000-1050</th>
+                                <th>1050-<br>1140</th>
+                                <th>4<br>1140-1230</th>
+                                <th>1230-<br>1300</th>
+                                <th>5<br>1300-1350</th>
+                                <th>6<br>1400-1450</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="day-cell">Sunday</td>
+                                <td>Disposal</td>
+                                <td class="class-cell">
+                                    <div class="course">BME 441</div>
+                                    <div class="teacher">AP Shafique</div>
+                                    <div class="room">T-4, Room 405</div>
+                                </td>
+                                <td class="class-cell">
+                                    <div class="course">BME 407</div>
+                                    <div class="teacher">Prof. Kaissar/Lee Rafid</div>
+                                    <div class="room">T-4, Room 405</div>
+                                </td>
+                                <td rowspan="4" class="break-cell">
+                                    <div class="break-label">T<br>E<br>A<br><br>B<br>R<br>E<br>A<br>K</div>
+                                </td>
+                                <td class="class-cell">
+                                    <div class="course">BME 410</div>
+                                    <div class="teacher">Lee Saira/Lee Labiba/Lee Borsha</div>
+                                </td>
+                                <td rowspan="4" class="prayer-cell">
+                                    <div class="prayer-label">P<br>R<br>A<br>Y<br>E<br>R<br><br>B<br>R<br>E<br>A<br>K</div>
+                                </td>
+                                <td class="class-cell">
+                                    <div class="course">BME 410</div>
+                                    <div class="teacher">Lee Saira/Lee Faria/Lee Labiba/Lee Borsha</div>
+                                </td>
+                                <td class="class-cell">
+                                    <div class="course">BME 409</div>
+                                    <div class="teacher">Lee Saira/Lee Faria</div>
+                                    <div class="room">T-4, Room 405</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="day-cell">Monday</td>
+                                <td>CT</td>
+                                <td colspan="2" class="class-cell">
+                                    <div class="course">Thesis</div>
+                                </td>
+                                <td colspan="2" class="class-cell">
+                                    <div class="course">Thesis</div>
+                                </td>
+                                <td class="class-cell">
+                                    <div class="course">BME 409</div>
+                                    <div class="teacher">Lee Saira/Lee Faria</div>
+                                    <div class="room">T-4, Room 405</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="day-cell">Tuesday</td>
+                                <td>Disposal</td>
+                                <td colspan="2" class="class-cell">
+                                    <div class="course">BME 441</div>
+                                    <div class="teacher">AP Shafique</div>
+                                    <div class="room">T-4, Room 405</div>
+                                </td>
+                                <td class="class-cell">
+                                    <div class="course">GEEM 451</div>
+                                    <div class="teacher">Lt Col Maruf</div>
+                                    <div class="room">T-4, Room 405</div>
+                                </td>
+                                <td class="class-cell">
+                                    <div class="course">GEEM 451</div>
+                                    <div class="teacher">Lt Col Maruf</div>
+                                    <div class="room">T-4, Room 405</div>
+                                </td>
+                                <td class="class-cell">
+                                    <div class="course">BME 421</div>
+                                    <div class="teacher">Prof Kaissar/Lee Saira</div>
+                                    <div class="room">T-4, Room 405</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="day-cell">Wednesday</td>
+                                <td>CT</td>
+                                <td colspan="2" class="class-cell">
+                                    <div class="course">BME 407</div>
+                                    <div class="teacher">Prof. Kaissar/Lee Rafid</div>
+                                    <div class="room">T-4, Room 405</div>
+                                </td>
+                                <td class="class-cell">
+                                    <div class="course">BME 421</div>
+                                    <div class="teacher">Prof Kaissar/Lee Saira</div>
+                                    <div class="room">T-4, Room 405</div>
+                                </td>
+                                <td class="class-cell">
+                                    <div class="course">BME 421</div>
+                                    <div class="teacher">Prof Kaissar/Lee Saira</div>
+                                    <div class="room">T-4, Room 405</div>
+                                </td>
+                                <td class="class-cell">
+                                    <div class="course">BME 407</div>
+                                    <div class="teacher">Prof. Kaissar/Lee Saira/Lee Faria</div>
+                                    <div class="room">T-4, Room 405</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="day-cell">Thursday</td>
+                                <td colspan="3" class="class-cell">
+                                    <div class="course">Thesis</div>
+                                </td>
+                                <td class="break-cell"></td>
+                                <td class="class-cell">
+                                    <div class="course">GESL 421</div>
+                                    <div class="teacher">Prof Kaissar/ Lt Col Maruf</div>
+                                    <div class="room">T-4, Room 405</div>
+                                </td>
+                                <td class="prayer-cell"></td>
+                                <td class="class-cell">
+                                    <div class="course">GESL 421</div>
+                                    <div class="teacher">Prof Kaissar/ Lt Col Maruf</div>
+                                    <div class="room">T-4, Room 405</div>
+                                </td>
+                                <td>Disposal</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="routine-legend">
+                    <div class="legend-item">
+                        <span class="legend-dot" style="background: var(--accent);"></span>
+                        <span>Regular Classes</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot" style="background: var(--secondary);"></span>
+                        <span>Thesis/Project</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot" style="background: var(--neutral);"></span>
+                        <span>Break/Disposal</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Software Page -->
+        <section id="software" class="page">
+            <div class="page-header">
+                <h2 class="page-title">Software Resources</h2>
+                <p class="page-subtitle">Essential tools for biomedical engineering students</p>
+            </div>
+            
+            <div class="content-section">
+                <div class="software-grid">
+                    <div class="software-card">
+                        <div class="software-icon">🐍</div>
+                        <h3 class="software-name">Python</h3>
+                        <p class="software-description">High-level programming language for data analysis, machine learning, and scientific computing.</p>
+                        <ul class="software-features">
+                            <li>NumPy & Pandas for data analysis</li>
+                            <li>Matplotlib & Seaborn for visualization</li>
+                            <li>SciPy for scientific computing</li>
+                        </ul>
+                        <a href="https://www.python.org/downloads/" target="_blank" class="download-btn">
+                            <span>Download</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 12L3 7L4.4 5.6L7 8.2V0H9V8.2L11.6 5.6L13 7L8 12Z" fill="currentColor"/>
+                                <path d="M0 14H16V16H0V14Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">🔧</div>
+                        <h3 class="software-name">SolidWorks</h3>
+                        <p class="software-description">Professional 3D CAD software for mechanical design, simulation, and product data management.</p>
+                        <ul class="software-features">
+                            <li>Parametric 3D modeling</li>
+                            <li>Assembly design & simulation</li>
+                            <li>Technical drawings & documentation</li>
+                        </ul>
+                        <a href="https://www.solidworks.com/sw/support/downloads.htm" target="_blank" class="download-btn">
+                            <span>Download</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 12L3 7L4.4 5.6L7 8.2V0H9V8.2L11.6 5.6L13 7L8 12Z" fill="currentColor"/>
+                                <path d="M0 14H16V16H0V14Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">🧪</div>
+                        <h3 class="software-name">ANSYS</h3>
+                        <p class="software-description">Advanced engineering simulation software for structural, thermal, and fluid dynamics analysis.</p>
+                        <ul class="software-features">
+                            <li>Finite element analysis (FEA)</li>
+                            <li>Computational fluid dynamics (CFD)</li>
+                            <li>Electromagnetic simulation</li>
+                        </ul>
+                        <a href="https://www.ansys.com/academic/students" target="_blank" class="download-btn">
+                            <span>Download</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 12L3 7L4.4 5.6L7 8.2V0H9V8.2L11.6 5.6L13 7L8 12Z" fill="currentColor"/>
+                                <path d="M0 14H16V16H0V14Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">🐧</div>
+                        <h3 class="software-name">Linux (Ubuntu)</h3>
+                        <p class="software-description">Open-source operating system ideal for development, programming, and server management.</p>
+                        <ul class="software-features">
+                            <li>Free and open-source</li>
+                            <li>Powerful command-line interface</li>
+                            <li>Extensive development tools</li>
+                        </ul>
+                        <a href="https://ubuntu.com/download/desktop" target="_blank" class="download-btn">
+                            <span>Download</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 12L3 7L4.4 5.6L7 8.2V0H9V8.2L11.6 5.6L13 7L8 12Z" fill="currentColor"/>
+                                <path d="M0 14H16V16H0V14Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">📊</div>
+                        <h3 class="software-name">MATLAB</h3>
+                        <p class="software-description">Numerical computing environment for algorithm development, data analysis, and visualization.</p>
+                        <ul class="software-features">
+                            <li>Matrix computations & linear algebra</li>
+                            <li>Signal & image processing</li>
+                            <li>Simulink for model-based design</li>
+                        </ul>
+                        <a href="https://www.mathworks.com/downloads/" target="_blank" class="download-btn">
+                            <span>Download</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 12L3 7L4.4 5.6L7 8.2V0H9V8.2L11.6 5.6L13 7L8 12Z" fill="currentColor"/>
+                                <path d="M0 14H16V16H0V14Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="software-card">
+                        <div class="software-icon">🧬</div>
+                        <h3 class="software-name">ImageJ</h3>
+                        <p class="software-description">Java-based image processing program designed for scientific multidimensional images.</p>
+                        <ul class="software-features">
+                            <li>Medical image analysis</li>
+                            <li>Particle analysis & tracking</li>
+                            <li>Extensible with plugins</li>
+                        </ul>
+                        <a href="https://imagej.net/downloads" target="_blank" class="download-btn">
+                            <span>Download</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 12L3 7L4.4 5.6L7 8.2V0H9V8.2L11.6 5.6L13 7L8 12Z" fill="currentColor"/>
+                                <path d="M0 14H16V16H0V14Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Page -->
+        <section id="gallery" class="page">
+            <div class="page-header">
+                <h2 class="page-title">Gallery</h2>
+                <p class="page-subtitle">Moments from our academic journey</p>
+            </div>
+            
+            <div class="content-section">
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-index="1">
+                        <div class="gallery-overlay">
+                            <span class="gallery-label">Department Event</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-index="2">
+                        <div class="gallery-overlay">
+                            <span class="gallery-label">Lab Session</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-index="3">
+                        <div class="gallery-overlay">
+                            <span class="gallery-label">Workshop</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-index="4">
+                        <div class="gallery-overlay">
+                            <span class="gallery-label">Student Projects</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-index="5">
+                        <div class="gallery-overlay">
+                            <span class="gallery-label">Research Presentation</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-index="6">
+                        <div class="gallery-overlay">
+                            <span class="gallery-label">Team Collaboration</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-index="7">
+                        <div class="gallery-overlay">
+                            <span class="gallery-label">Technical Seminar</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-index="8">
+                        <div class="gallery-overlay">
+                            <span class="gallery-label">Campus Life</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page">
+            <div class="page-header">
+                <h2 class="page-title">Contact CRs</h2>
+                <p class="page-subtitle">Get in touch with your Class Representatives</p>
+            </div>
+            
+            <div class="content-section">
+                <div class="cr-grid">
+                    <div class="cr-card">
+                        <div class="cr-avatar">
+                            <div class="avatar-circle">CR</div>
+                        </div>
+                        <h3 class="cr-name">Class Representative 1</h3>
+                        <p class="cr-role">Academic Coordinator</p>
+                        <div class="cr-details">
+                            <div class="detail-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <span>cr1@bme.edu</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                <span>+880 1XXX-XXXXXX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cr-card">
+                        <div class="cr-avatar">
+                            <div class="avatar-circle">CR</div>
+                        </div>
+                        <h3 class="cr-name">Class Representative 2</h3>
+                        <p class="cr-role">Student Liaison</p>
+                        <div class="cr-details">
+                            <div class="detail-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <span>cr2@bme.edu</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                <span>+880 1XXX-XXXXXX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cr-card">
+                        <div class="cr-avatar">
+                            <div class="avatar-circle">CR</div>
+                        </div>
+                        <h3 class="cr-name">Assistant CR</h3>
+                        <p class="cr-role">Support & Coordination</p>
+                        <div class="cr-details">
+                            <div class="detail-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <span>acr@bme.edu</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                <span>+880 1XXX-XXXXXX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-footer">
+                    <h3>Office Hours</h3>
+                    <p>CRs are available for consultation during the following times:</p>
+                    <div class="office-hours">
+                        <div class="hours-item">
+                            <span class="day">Sunday - Thursday</span>
+                            <span class="time">2:00 PM - 4:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Department of Biomedical Engineering. All rights reserved.</p>
+            <p>Level-4, Term-II | Session: 2024-25</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
